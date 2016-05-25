@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    form(name="get-score", method="post")
+        input(type="text", placeholder="Enter text", name="inputemail")
+        input(type="submit", value="Get Score")
+    p #{email}
+    p #{score}
